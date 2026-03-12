@@ -12,7 +12,7 @@ object SimpleNetwork  {
     outputStream.println("Hello World");
     //sleep for checking for input
     while(inputStream.available()<1) { Thread.sleep(100) }
-    val buffer = new Array.[Byte](inputStream.available())
+    val buffer = new Array[Byte](inputStream.available())
     inputStream.read(buffer);
     val input = new String(buffer);
     println(input)
